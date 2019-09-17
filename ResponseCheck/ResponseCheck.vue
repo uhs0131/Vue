@@ -1,0 +1,44 @@
+<template>
+  <div>
+    <div id="screen" v-bind:class="state">{{message}}</div>
+    <div>
+      <div>평균 시간:{{}}</div>
+      <button @click="onReset">리셋</button>
+    </div>
+  </div>
+</template>
+
+<script>
+  export_default{
+    data(){
+      return{
+        state:'waiting',    // v-bind: 축약형 => :, v-on: 축약형 => @
+        result:[],
+        message:'클릭해서 시작하세요.'
+      }
+    },
+    methods:{
+
+    }
+  }
+</script>
+
+<style scoped>
+  #screen{
+    width:300px;
+    height:200px;
+    text-align:center;
+    user-select:none;
+  }
+  #screen.waiting{
+    background-color:aqua;
+  }
+  #screen.ready{
+    background-color:red;
+    color:white;
+  }
+  #screen.now{
+    background-color:greenyellow;
+  }
+
+</style>
