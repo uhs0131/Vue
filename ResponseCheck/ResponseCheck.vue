@@ -9,18 +9,20 @@
 </template>
 
 <script>
-  export_default{
-    data(){
-      return{
-        state:'waiting',    // v-bind: 축약형 => :, v-on: 축약형 => @
-        result:[],
-        message:'클릭해서 시작하세요.'
-      }
-    },
+  export default{
+  data(){
+    return{
+      state:'waiting',
+      result:[],
+      message:'클릭해서 시작하세요.',
+    };
+  },
     methods:{
+      onReset(){
 
+      }
     }
-  }
+  };
 </script>
 
 <style scoped>
