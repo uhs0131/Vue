@@ -1,5 +1,5 @@
 {
-  "name": "response-check",
+  "name": "tic-tac-toe",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
     "css-loader": "^3.2.0",

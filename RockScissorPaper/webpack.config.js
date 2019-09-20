@@ -27,6 +27,6 @@ module.exports = {
   output:{
     filename:'[name].js',
     path:path.join(__dirname, 'dist'),
-    publicPath:'/dist',       // webpack dev server 쓰려고 추가 - 메모리에 파일이 추가되고 실제로 파일이 생기지는 않는다.
+    publicPath:'/dist',       // webpack dev server 쓰려고 추가
   },
 };
